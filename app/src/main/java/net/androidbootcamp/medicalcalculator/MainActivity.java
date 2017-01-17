@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         convert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+                weightEntered=Double.parseDouble(weight.getText().toString());
             }
         });
     }

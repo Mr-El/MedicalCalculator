@@ -73,4 +73,14 @@
         android:gravity="center_horizontal"
         android:layout_marginBottom="15dp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnConvert"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:id="@+id/txtResult"
+        android:textSize="25sp"
+        android:textColor="#FF0000" />
+
 </RelativeLayout>

@@ -46,6 +46,15 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, "Pounds must be less than 500", Toast.LENGTH_LONG).show();
                     }
                 }
+
+                if(kiloToLb.isChecked()) {
+                    if (weightEntered <= 225) {
+                        convertedWeight = weightEntered * conversionRate;
+                        result.setText(tenth.format(convertedWeight) + "pounds");
+                    } else {
+                        Toast.makeText(MainActivity.this, "Kilos must be less than 225", Toast.LENGTH_LONG).show();
+                    }
+                }
             }
         });
     }

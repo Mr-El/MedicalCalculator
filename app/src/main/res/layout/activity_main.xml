@@ -35,4 +35,31 @@
         android:textSize="25sp"
         android:gravity="center_horizontal" />
 
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtWeight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" >
+
+        <RadioButton
+            android:text="RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radLbToKilo"
+            android:layout_weight="1"
+            android:checked="true"
+            tools:text="@string/radLbToKilo"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:text="@string/radKiloToLb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radKiloToLb"
+            android:layout_weight="1"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
 </RelativeLayout>

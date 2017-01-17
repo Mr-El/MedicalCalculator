@@ -1,5 +1,6 @@
 package net.androidbootcamp.medicalcalculator;
 
+import android.icu.text.DecimalFormat;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -34,6 +35,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 weightEntered=Double.parseDouble(weight.getText().toString());
+                DecimalFormat tenth = new DecimalFormat("#.#");
+
+                if(lbToKilo.isChecked()) {
+                    if (weightEntered <= 500) {
+
+                    } else {
+
+                    }
+                }
             }
         });
     }

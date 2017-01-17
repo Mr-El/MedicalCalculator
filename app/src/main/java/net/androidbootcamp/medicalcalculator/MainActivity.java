@@ -4,6 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
+    double conversionRate = 2.2;
+    double weightEntered;
+    double convertedWeight;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 //Elliott Britton 1/17/2017
 public class MainActivity extends AppCompatActivity {
@@ -39,9 +40,10 @@ public class MainActivity extends AppCompatActivity {
 
                 if(lbToKilo.isChecked()) {
                     if (weightEntered <= 500) {
-
+                        convertedWeight = weightEntered / conversionRate;
+                        result.setText(tenth.format(convertedWeight) + " kilograms");
                     } else {
-
+                        Toast.makeText(MainActivity.this, "Pounds must be less than 500", Toast.LENGTH_LONG).show();
                     }
                 }
             }
